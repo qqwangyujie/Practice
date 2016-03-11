@@ -1,0 +1,57 @@
+
+*, a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: #f3f2f3;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    font-family: "微软雅黑", helvetica arial;
+    background: #f3f2f3;
+
+}
+
+.img-wrapper {
+    position: relative;
+    width: 1200px;
+    font-size: 15px;
+}
+
+.img-wrapper .box {
+    margin: 10px 20px 10px 0;
+    float: left;
+    overflow: hidden;
+    width: 18%;
+    box-shadow: 0 1px 2px 0 rgba(210, 210, 210, .31);
+    box-sizing: border-box;
+}
+
+.box .img-content {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+
+.img-content a {
+    display: block;
+}
+
+.img-content a img {
+    display: block;
+    width: 100%;
+}
+
+.text-content {
+    box-sizing: border-box;
+    float: left;
+    background: #ffffff;
+    width: 100%;
+    padding: 5px 10px;
+
+}

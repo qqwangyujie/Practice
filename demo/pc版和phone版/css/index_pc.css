@@ -1,0 +1,470 @@
+
+body{
+    min-width: 1200px;
+    font-family:"klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #f65a5b;
+}
+p{
+    display: block;
+    font-size: 20px;
+
+    text-align: left;
+    text-indent: 2em;
+    margin: 15px auto;
+}
+hr{
+    border: 2px solid #000;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+/*----------------------------Í·-----------------------------*/
+.header{
+    width: 100%;
+    height: 50px;
+    background: #f65a5b;
+}
+.header-container{
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+/*µÇÂ½×¢²á*/
+.header-container .login{
+    position: relative;
+    width: 400px;
+    float: left;
+}
+.login::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    left: 40px;
+    top: 20px;
+
+}
+.login a{
+    display: inline-block;
+    width: 60px;
+    color: #fff;
+}
+/*°®ÃÀÊ³*/
+.header-container .ai-mei-shi{
+    position: relative;
+    width: 590px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+.header-container .ai-mei-shi span{
+    display: inline-block;
+    background: url("../images/icon.png") top left no-repeat;
+    width:34px;
+    height:50px; background-position:-10px -478px;
+}
+.ai-mei-shi a{
+    display: inline-block;
+    position: absolute;
+    height:50px;
+    left: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+/*ËÑË÷*/
+.search{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 50px;
+
+    line-height: 50px;
+}
+.search .input{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+.search .input i{
+    display: block;
+    position: absolute;
+    background:url("../images/icon.png") no-repeat center;
+    width:20px;
+    height:24px;
+    background-position:-56px -575px;
+    top: 10px;
+    left:15px;
+}
+.search span{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.search span::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background:url("../images/icon.png") no-repeat center;
+    width:24px;
+    height:22px;
+    background-position:-86px -575px;
+    left: -30px;
+    top: 13px;
+}
+/*----------------------------banner-----------------------------*/
+.banner{
+    margin: 0 auto;
+    width: 100%;
+    height: 900px;
+    background:  #eee url("../images/bg.png") no-repeat center;
+    background-size: cover;
+}
+.banner .container{
+    height: 900px;
+}
+.banner ul{
+    padding: 1px;/*-·ÀÖ¹ie ul»»ÐÐbug--*/
+    opacity: .7;
+    width: 1200px;
+    height: 50px;
+}
+.banner ul li{
+    display: inline;
+    text-align: center;
+    float: left;
+    width: 190px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    border-right:3px solid #fff ;
+    background: #E7E7F3;
+}
+.banner .select{
+    background: #204056;
+    color: #fff;
+    font-weight: 700;
+}
+.banner .title{
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    height: 500px;
+}
+.title .icon{
+    display: block;
+    margin: 50px auto 20px auto;
+    background: url("../images/icon.png") left top no-repeat ;
+    width:128px;
+    height:128px;
+    background-position:-10px -10px;
+}
+.banner .title a{
+    color: #f65a5b;
+    font-size: 40px;
+    font-weight: 700;
+}
+.banner .title p{
+    margin: 30px auto;
+    text-align: center;
+    color:#fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.banner button{
+    cursor: pointer;
+    border: 0;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    background:#f65a5b;
+}
+.banner .box{
+    margin-right: 30px;
+    float: left;
+    width: 350px;
+    height: 350px;
+}
+.banner .box .img{
+    text-align: center;
+    width: 100%;
+    height: 170px;
+    background: #E7E7F3;
+    opacity: .7;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.banner .box .img h1{
+    margin: 0;
+}
+.banner .box .img .img-icon{
+    margin: 0 auto;
+    width:100px;
+    height:100px;
+}
+.icon1{
+    background:url("../images/icon.png") top left no-repeat;
+    background-position:-10px -368px;
+}
+.icon2{
+    background:url("../images/icon.png") top left no-repeat;
+    background-position:-10px -148px;
+}
+.icon3{
+    background:url("../images/icon.png") top left no-repeat;
+    background-position:-10px -258px;
+}
+.banner .box p{
+    color: #fff;
+}
+/*----------------------------ÄÚÈÝ-----------------------------*/
+.content,.page1{
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+}
+/*----------page1---------*/
+.page1{
+    height: 1000px;
+}
+.page1 p{
+    line-height: 34px;
+}
+.page1-h{
+    height: 300px;
+    padding: 60px 0 0 0;
+    text-align: center;
+}
+.page1-h hr{
+    width:200px;
+}
+.page1-h p{
+    width:800px;
+}
+.page1-b{
+    width: 100%;
+}
+.page1-b li{
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    box-sizing: border-box;
+    float: left;
+    width: 350px;
+    height: 250px;
+    border: 1px solid #eee;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #204056;
+    color: #fff;
+}
+.page1-b li img{
+    width: 100%;
+    height: 100%;
+}
+.page1-b li span{
+    position: absolute;
+    display: block;
+    width: 400px;
+    height: 150px;
+    background: #f65a5b;
+    transform: rotate(19deg);
+    -webkit-transform:rotate(19deg);
+    -moz-transform: rotate(19deg);
+    -ms-transform: rotate(19deg);
+    top: 178px;
+    left: -65px;
+}
+.page1-b li i{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+    font-size: 20px;
+
+    font-weight: 700;
+}
+.page1-b li h1{
+    text-align: center;
+}
+.page1-b li p{
+    margin: 0 auto;
+    width: 280px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.page1-b li strong{
+    position: absolute;
+    font-size: 30px;
+    bottom: 10px;
+    right: 80px;
+}
+.page1-b li del{
+    position: absolute;
+    font-size: 12px;
+    bottom: 15px;
+    right: 10px;
+}
+/*----------page2---------*/
+.page2{
+    height: 500px;
+    background: #6a737b;
+}
+.page2  .page2-b{
+    height: 396px;
+    padding: 52px 0;
+}
+.page2  .page2-b img {
+    float: left;
+}
+.page2  .page2-b .info{
+    margin-left: 30px;
+    float: left;
+    width: 500px;
+}
+.page2  .page2-b h1{
+    margin-top: 0px;
+}
+.page2  .page2-b h2{
+    color: #fff;
+}
+.page2  .page2-b hr{
+    width: 200px;
+    text-align: left;
+    margin-left: 0;
+}
+.info p{
+    color: #ffffff;
+}
+/*----------page3---------*/
+.page3{
+    height: 650px;
+}
+.page3-h{
+    height: 100px;
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+.page3-h hr{
+    width:200px;
+}
+.page3-b{
+
+}
+.page3-b .box{
+    float: left;
+    position: relative;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+    width: 258px;
+    height: 350px;
+    border: 1px solid #EEEEEE;
+}
+.page3-b .box a{
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    color: #f7767e;
+    font-weight: 600;
+    text-decoration: none;
+}
+/*----------------------------footer-----------------------------*/
+.footer{
+    background: #6a737b;
+    height: 350px;
+}
+.footer .container{
+    height: 350px;
+}
+.footer ul{
+    display: inline-block;
+    float: left;
+    margin:0 20px;
+    padding-top: 50px;
+    padding-left: 0;
+    width: 200px;
+    height: 300px;
+    color: #fff;
+    font-weight: 700;
+}
+.footer .l-head{
+    color:#f65a5b ;
+    font-size: 23px;
+}
+.footer ul li{
+    height: 40px;
+}
+.footer ul li a{
+    color: #ffffff;
+}
+
+/*----------------------------°æÈ¨-----------------------------*/
+
+.copyright{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background:#f65a5b;
+}
+.copyright .container{
+    position: relative;
+}
+.copyright p{
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 60px;
+}
+.copyright .icon{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 250px;
+    height: 36px;
+}
+.i1,.i2,.i3,.i4,.i5,.i6{
+    display: inline-block;
+    width:36px; height:36px;
+    background: url("../images/icon.png") no-repeat;
+}
+.i1{
+    background-position:-54px -478px;
+}
+.i2{
+    background-position:-100px -478px;
+}
+.i3{
+    background-position:-10px -529px;
+}
+.i4{
+    background-position:-56px -529px;
+}
+.i5{
+    background-position:-102px -529px;
+}
+.i6{
+    background-position:-10px -575px;
+}

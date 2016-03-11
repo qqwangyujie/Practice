@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>后台首页</title>
+    <link type="text/css" rel="stylesheet " href="css/bootstrap.min.css" >
+    <link type="text/css " rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+        <div class="container">
+            <!-------------------------------导航--------------------------------------------------------------------->
+            <div class="row rnav">
+                <div class="col-xs-2">
+                    <p>管理系统</p>
+                </div>
+                <!------------------------------------小图标------------------------------->
+                <div class="col-xs-2">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-comment select" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                </div>
+                <!------------------------------------搜索------------------------------->
+                <div class="col-xs-6">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <input type="text" placeholder="搜索" class="form-control">
+                </div>
+                <!------------------------------------我的信息------------------------------->
+                <div class="col-xs-2 r2">
+                    我的信息
+                    <img src="images/people1.png">
+                </div>
+            </div>
+            <!--------------------------------内容-------------------------------------------------------------------->
+            <div class="row rbody">
+                <!------------------------------------内容左侧------------------------------->
+                <div class="col-xs-2 r1">
+                    <ul>
+                        <li>
+                            <span class="glyphicon glyphicon-home"aria-hidden="true"></span>
+                            主页
+                        </li>
+                        <li><span class="glyphicon glyphicon-lock"aria-hidden="true"></span>
+                           数据统计
+                        </li>
+                        <li><span class="glyphicon glyphicon-folder-close"aria-hidden="true"></span>
+                           流量情况
+                        </li>
+                        <li><span class="glyphicon glyphicon-wrench"aria-hidden="true"></span>修复工具</li>
+                        <li><span class="glyphicon glyphicon-phone-alt"aria-hidden="true"></span>电话</li>
+                        <li><span class="glyphicon glyphicon-oil"aria-hidden="true"></span>小工具</li>
+                    </ul>
+                </div>
+                <!------------------------------------内容中间------------------------------->
+                <div class="col-xs-8">
+
+                    <!---------------分页导航--------------->
+                    <ol class="breadcrumb">
+                        <li><a href="#">主页</a></li>
+                        <li><a href="#">page1</a></li>
+                        <li class="active">page2</li>
+                    </ol>
+                    <!---------------小功能--------------->
+                   <div class="row">
+                       <div class="col-xs-1 select">学生表</div>
+                       <div class="col-xs-1">班级表</div>
+                       <div class="col-xs-1">年龄表</div>
+                       <div class="col-xs-1">老师表</div>
+                       <div class="col-xs-1">通过</div>
+                       <div class="col-xs-1">不通过</div>
+                   </div>
+                    <!---------------主体内容表--------------->
+                    <div class="table">
+                        <table class="table table-striped">
+                            <thead>
+
+                            <tr>
+                                <td colspan="5">学生表</td>
+                            </tr>
+
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>姓名</th>
+                                <th>年龄</th>
+                                <th>班级</th>
+                                <th>成绩</th>
+                                <th id="cz">评价</th>
+
+                            </tr>
+                            <tr>
+                                <th>张1</th>
+                                <th>11</th>
+                                <th>2班</th>
+                                <th>99</th>
+                                <th>
+                                    <button type="button" class="btn btn-success">好</button>
+                                   <button type="button" class="btn btn-default">中</button>
+                                   <button type="button" class="btn btn-default">差</button>
+                                </th>
+
+
+                            </tr>
+                            <tr>
+                                <th>张2</th>
+                                <th>22</th>
+                                <th>1班</th>
+                                <th>99</th>
+                                <th>
+                                    <button type="button" class="btn btn-default">好</button>
+                                    <button type="button" class="btn btn-primary">中</button>
+                                    <button type="button" class="btn btn-default">差</button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>张3</th>
+                                <th>33</th>
+                                <th>3班</th>
+                                <th>99</th>
+                                <th>
+                                    <button type="button" class="btn btn-default">好</button>
+                                    <button type="button" class="btn btn-default">中</button>
+                                    <button type="button" class="btn btn-danger">差</button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>张3</th>
+                                <th>33</th>
+                                <th>3班</th>
+                                <th>99</th>
+                                <th>
+                                    <button type="button" class="btn btn-default">好</button>
+                                    <button type="button" class="btn btn-default">中</button>
+                                    <button type="button" class="btn btn-default">差</button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>张3</th>
+                                <th>33</th>
+                                <th>3班</th>
+                                <th>99</th>
+                                <th>
+                                    <button type="button" class="btn btn-default">好</button>
+                                    <button type="button" class="btn btn-default">中</button>
+                                    <button type="button" class="btn btn-default">差</button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>张3</th>
+                                <th>33</th>
+                                <th>3班</th>
+                                <th>99</th>
+                                <th>
+                                    <button type="button" class="btn btn-default">好</button>
+                                    <button type="button" class="btn btn-default">中</button>
+                                    <button type="button" class="btn btn-default">差</button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>张3</th>
+                                <th>33</th>
+                                <th>3班</th>
+                                <th>99</th>
+                                <th>
+                                    <button type="button" class="btn btn-default">好</button>
+                                    <button type="button" class="btn btn-default">中</button>
+                                    <button type="button" class="btn btn-default">差</button>
+                                </th>
+                            </tr>
+
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th colspan="5"> <button type="button" class="btn btn-default pull-right">保存</button></th>
+                            </tr>
+                            </tfoot>
+                        </table>
+
+
+
+                    </div>
+                </div>
+                <!------------------------------------内容右侧------------------------------->
+                <div class="col-xs-2 r3">
+                   <div class="box">
+                        <div class="img">
+                            <img src="images/pic1.jpg">
+                        </div>
+                       <div class="con">
+                           <p>床前明月光,养老金入市明年启动</p>
+                       </div>
+                       <div class="zz">关注</div>
+                   </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/pic2.jpg">
+                        </div>
+                        <div class="con">
+                            <p>床前明月光,养老金入市明年启动</p>
+                        </div>
+
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/pic1.jpg">
+                        </div>
+                        <div class="con">
+                            <p>床前明月光,养老金入市明年启动</p>
+                        </div>
+                        <div class="zz">关注</div>
+                    </div>
+                    <div class="box">
+                        <div class="img">
+                            <img src="images/pic2.jpg">
+                        </div>
+                        <div class="con">
+                            <p>床前明月光,养老金入市明年启动</p>
+                        </div>
+                        <div class="zz">关注</div>
+                    </div> <div class="box">
+                    <div class="img">
+                        <img src="images/pic1.jpg">
+                    </div>
+                    <div class="con">
+                        <p>床前明月光,养老金入市明年启动</p>
+                    </div>
+                    <div class="zz">关注</div>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+</html>

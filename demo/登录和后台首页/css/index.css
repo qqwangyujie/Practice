@@ -1,0 +1,273 @@
+
+*{
+    list-style: none;
+}
+ol, ul{
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    min-width: 1300px !important;
+    min-height: 700px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------导航---------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+.rnav{
+    position: absolute;
+    width: 100%;
+    min-width: 1300px !important;
+    z-index: 99;
+    box-sizing: border-box;
+    line-height: 60px;
+    height: 60px;
+    background: #32b38c;
+    border: 1px solid #e7e3df;
+}
+
+[class*="col-"]{
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+.rnav .col-xs-2, .rnav .col-xs-6{
+    border-right: 1px solid #e7e3df;
+}
+/*导航logo*/
+.rnav .col-xs-2 >p {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+}
+/*-----------------------------------------------------导航小图标------------------------------------------*/
+.rnav .col-xs-2 >span{
+    width: 45px;
+}
+.rnav  .glyphicon{
+    font-size: 20px;
+}
+.rnav  .select{
+    position: relative;
+    color: #fff;
+}
+.rnav  .select::after{
+    content: "3";
+
+    position: absolute;
+    top:-5px;
+    right: 18px;
+    width: 18px;
+    height: 15px;
+    line-height: 10px;
+    background: #faa487;
+    border:1px solid transparent ;
+
+    border-radius: 50%;
+    font-size:10px;
+    font-weight: 700;
+    text-align: center;
+
+}
+/*-----------------------------------------------导航搜索---------------------------------------------------*/
+.rnav .col-xs-6{
+    position: relative;
+}
+.rnav .col-xs-6>span{
+    z-index: 99;
+    position: absolute;
+    font-size:15px ;
+    top: 20px;
+    left: 25px;
+}
+.rnav .col-xs-6 input{
+    position: relative;
+    width: 250px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 30px;
+    outline: none;
+    color: #000000;
+    border-radius:15px/15px;
+}
+/*------------------------------------------------导航右边-------------------------------------------------*/
+.r2{
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+}
+.r2 h6{
+    display: block;
+}
+.r2 img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 60px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------整个内容---------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------左侧功能--------------------------------------------------*/
+.rbody{
+    padding-top: 60px;
+    height: 100%;
+    background: #f5f1e8;
+    min-height: 650px;
+}
+.rbody .r1{
+    background: #393836;
+    border-right: 1px solid #e7e7e7;
+}
+.rbody  .r1 ul{
+    width:100% ;
+    padding: 0;
+    height: 100%;
+    color: #979692;
+
+}
+.rbody  .r1 ul li{
+    position: relative;
+    display: block;
+    height: 60px;
+    padding-left: 10px;
+    width: 100%;
+    line-height:60px;
+}
+.rbody  .r1 ul li:hover{
+    color: #fff;
+
+}
+.circle{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent ;
+    border-right: 10px solid #e7e7e7 ;
+    border-top: 10px solid transparent ;
+    border-bottom: 10px solid transparent ;
+}
+.rbody   .r1 ul li span{
+    margin: 0 15px;
+}
+/*------------------------------------------------中间---------------------------------------------------*/
+
+/*导航条*/
+.rbody .col-xs-8{
+    padding: 0;
+    background: #e7e7e7;
+}
+.rbody .breadcrumb{
+    border-bottom: 1px solid #e7e7e7 ;
+    margin: 0;
+    border-radius: 0;
+}
+
+/*功能操作*/
+.col-xs-8 >.row{
+    padding: 0;
+    margin: 0;
+
+    border-bottom: 1px solid   #e7e7e7;
+    background: #f5f5f5;
+}
+.col-xs-8 >.row >.col-xs-1{
+    height: 80px;
+
+    padding: 0;
+    text-align: center;
+    line-height: 80px;
+    font-size:18px;
+}
+.col-xs-8 >.row>.select{
+    background: #32b38c;
+    color: #dff0d8;
+    height: 60px;
+    margin-top: 10px;
+    line-height: 60px;
+    border: 1px solid transparent;
+    border-radius: 20%;
+}
+/*table内容*/
+
+.col-xs-8 >.table{
+    margin: 10px auto;
+    width: 90%;
+    box-shadow: 1px 1px 1px #888;
+}
+.col-xs-8  table{
+    margin: 0;
+}
+.col-xs-8 >.table thead{
+    text-align: center;
+    font-weight: 800;
+}
+#cz{
+    width: 150px;
+}
+.col-xs-8 > tfoot{
+    text-align: center;
+    font-weight: 800;
+}
+
+/*------------------------------------------------右侧---------------------------------------------------*/
+
+.r3{
+    border-left: 1px solid #e7e7e7;
+    padding: 0;
+}
+.r3 .box{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px;
+    border: 1px solid #e7e7e7;
+
+    color: #979692;
+}
+.r3 .box .img{
+    margin-right: 10px;
+    float: left;
+    height: 80px;
+    width: 80px;
+
+}
+.r3 .zz{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: 10px;
+    top: 10px;
+    background: #6f6f6f;
+    opacity: 0.8;
+    line-height: 80px;
+    font-size: 20px;
+    text-align: center;
+    color: #fea58a;
+    font-weight: 800;
+}
+.r3 .con{
+    font-size: 15px;
+    overflow: auto;
+    float: left;
+    width: 100px;
+    height: 80px;
+
+}
+.r3 img{
+    width: 100%;
+    height: 100%;
+}

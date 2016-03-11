@@ -1,0 +1,242 @@
+/*初始化*/
+*{
+    margin: 0;padding: 0;
+    color: #000000;
+    font-family: arial,  'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+html,body{
+    height: 100%;
+}
+.container{
+        width: 100%;
+        min-height: 800px;
+        min-width: 320px;
+        height: 100%;
+        position: relative;
+}
+/*导航*/
+.nav{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+
+}
+.nav  .more{
+    position: absolute;
+    float: right;
+    color: #ffffff;
+    top: -5px;
+    font-size: 13px;
+    line-height: 22px;
+
+    width: 70px;
+    height: 22px;
+    background-color: #3385ff;
+}
+.nav ul{
+
+    width: 340px;
+    height: 38px;
+    float: right;
+    padding: -1px;
+}
+.nav li{
+    display: block;
+
+    position: relative;
+    float: left;
+    font-weight: 700;
+    font-size: 13px;
+    color: #333;
+    margin:20px 10px 0 0;
+    width: 30px;
+    height: 16px;
+    border: none;
+    *margin-right:7px;
+}
+
+.nav ul li a{
+    width: 30px;
+    height: 16px;
+    letter-spacing: 1px;
+    border: none;
+}
+.font-weight{
+    font-weight: 300;
+}
+.set{
+    position: relative;
+}
+.set-c{
+    display:none ;
+    top: 21px;
+
+    width: 60px;
+    height: 120px;
+    border: 1px solid #d1d1d1;
+    position: absolute;
+    left: -50%;
+}
+.set-c::before,
+.set-c::after{
+    width: 0;
+    height: 0;
+    border: 8px;
+    position: absolute;
+    border-right-color: transparent ;
+    border-left-color: transparent ;
+    border-top-color: transparent ;
+    border-style: solid;
+    margin-left: -8px;
+    left: 50%;
+    content: "";
+}
+.set-c::before{
+    top: -16px;
+    border-bottom-color: #d1d1d1;
+}
+.set-c::after{
+    top: -15px;
+    border-bottom-color: #fff;
+}
+.set-c p{
+    font-weight: 500;
+    line-height: 30px;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+}
+.set-c p:hover{
+    color: #fff;
+    background: #3385ff;
+}
+.nav a:hover{
+    color: #0000cc;
+}
+/*logo*/
+.logo{
+    margin-top: 100px;
+}
+img{
+    height: 129px;
+    width: 275px;
+    display: block;
+    margin: 0 auto;
+}
+/*搜索框*/
+.content{
+    position: relative;
+    height: 100px;
+    margin: 30px auto;
+    width: 660px;
+}
+.input{
+    position: relative;
+    border: 1px solid #e2e2e2;
+    float: left;
+    width: 540px;
+    height: 34px;
+}
+.input:hover{
+    border: 1px solid #cecece;
+}
+.input input{
+    line-height: 34px;
+    overflow: hidden;
+
+    margin-left: 10px;
+    width: 500px;
+    height: 100%;
+    border:0;
+    outline: none;
+
+
+}
+/*仅IE6*/
+*html .input input{
+    *padding-top:9px ;
+    _line-height:10px;
+}
+/*仅IE7*/
+*+html .input input{
+    line-height:10px;
+    padding-top:9px
+}
+.submit{
+    outline: none;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+    font-size: 15px;
+    color: #fff;
+    height: 36px;
+    background-color: #3385ff;
+    border: 0;
+}
+.submit:hover{
+    background-color: #317ef3;
+}
+/*empty*/
+.empty{
+    width: 100%;
+    height: 300px;
+
+}
+/*底部*/
+.foot{
+    height: 100px;
+    color: #00c;
+    text-align: center;
+    width: 500px;
+    font-size: 13px;
+    position:absolute;
+    left: 50%;
+    margin-left: -250px;
+    bottom: 24px;
+}
+.foot p a{
+    margin: 0 6px;
+    color: #00c;
+}
+.foot h5{
+    font-size: 13px;
+    line-height: 20px;
+    height: 20px;
+    font-weight: 400;
+    color: #666;
+}
+.foot h5 a{
+    font-weight: 300;
+    color: #666;
+}
+.icon{
+    width: 14px;
+    height:17px;
+    display: inline-block;
+    background:url("../images/icon.png") no-repeat center;
+    background-position:-600px -96px ;
+}
+/*------------屏幕<415时隐藏元素--------*/
+/*导航*/
+.nav .weather,.nav .nav .nav-user{
+    display: none;
+}
+/*content*/
+.content ul{
+    display: none;
+}
+/*empty*/
+.empty .box{
+    display: none;
+}
+/*foot*/
+.foot h4{
+    display: none;
+}

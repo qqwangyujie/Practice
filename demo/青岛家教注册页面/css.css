@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+    background: #45b29a;
+}
+.container{
+    position: relative;
+    padding: 10px;
+    width: 800px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 2px 2px 5px #888;
+}
+/*nav*/
+a{
+    color: #ff8df8;
+}
+.zhuce{
+    right: 20px;
+    position: absolute;
+}
+ul{
+    float: right;
+}
+li{
+    width: 55px;
+    float: left;
+}
+.heading{
+    line-height: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    width: 800px;
+}
+/*table*/
+table{
+    padding: 10px;
+    border-collapse: collapse;
+    border: 1px solid #dddddd;
+}
+.table2{
+    height: 100px;
+    text-align: center;
+    width: 800px;
+}
+.table2 button{
+    width: 100px;
+    padding: 5px;
+}
+.table3{
+    margin-top: 20px;
+    width: 800px;
+    border: 0;
+    text-align: center;
+}
+td{
+    padding: 5px ;
+}
+.tdT{
+    text-align: right;
+    width: 150px;
+}
+
+/*span*/
+.spanR{
+    color: #ff0000;
+}
+.spanB{
+    color: blue;
+}
+.spanT{
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.spanD{
+    display: inline-block;
+    margin-top: 5px;
+}
+textarea{
+    width: 400px;
+    height: 80px;
+    resize:none;
+}
+.title{
+    font-weight: 600;
+    font-size: 15px;
+    background: #dae5e2;
+    color: rgb(0, 51, 153);
+}

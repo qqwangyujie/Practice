@@ -1,0 +1,152 @@
+
+*{
+    font-family:  "微软雅黑" ,helvetica arial;
+}
+html,body,.container,.header,.content,.footer{
+    width: 100%;
+}
+html,body,.container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/*-------------------------头-----------------------*/
+.header{
+
+    height: 90px;
+    line-height: 40px;
+    font-size: 20px;
+
+    background:#f65a5b;
+}
+.header-info{
+    margin: 0 auto;
+    width: 80%;
+    height: 40px;
+}
+.header-info .logo{
+    float: left;
+    display: inline-block;
+    width: 40%;
+    color: #ffffff;
+    background:#f65a5b;
+    line-height: 40px;
+    height:40px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+/*搜索*/
+.header-info .input{
+    position: relative;
+    float: right;
+    width: 60%;
+    height:40px;
+}
+.header-info .input::after{
+    top: 15px;
+    right: 10px;
+    content: "";
+    width: 16px;
+    height:16px;
+    background-size:15px 15px;
+    position: absolute;
+    background: url("../images/phone_icon.png") no-repeat ;
+}
+.header-info .input input{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius:10px/10px ;
+}
+.header .nav{
+    width: 100%;
+    height: 50px;
+    background: #eee;
+
+}
+.header .nav a{
+    float: left;
+    text-align: center;
+    display: block;
+    width: 25%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    background: #EEEEEE;
+    color: #080808;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.header .nav .select{
+    background: #555555;
+    color: #ffffff;
+    font-weight: 700;
+}
+/*-------------------------content-----------------------*/
+.content{
+    margin-top: 20px;
+}
+
+/*内容层*/
+.content a{
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+/*商品的图片*/
+.content img{
+    float: left;
+    display: inline-block;
+    background: #00469f;
+    width: 140px;
+    height: 130px;
+    overflow: hidden;
+}
+/*商品的文字描述*/
+.content span{
+    position: absolute;
+    left: 160px;
+    top: 10px;
+    float: left;
+    display: inline-block;
+    margin: 0;
+    height: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: #eea236;
+    line-height: 30px;
+
+}
+/*按钮加载更多*/
+.content .button{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.button button{
+    background: #e7e7e7;
+    outline: none;
+    padding: 5px;
+    border: 0;
+}
+
+

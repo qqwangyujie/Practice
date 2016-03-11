@@ -1,0 +1,143 @@
+
+    /*初始化*/
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*容器*/
+.container{
+    box-sizing: border-box;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    margin-top:-150px ;
+    left: 50%;
+    margin-left:-150px ;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+/*div盒子*/
+.container>div{
+    position: absolute;
+    box-sizing: border-box;
+    width: 98px;
+    height: 98px;
+    box-shadow: 3px 3px 5px #888888;
+    transition:  background-color  1.5s;
+    border:1px solid transparent;
+    border-radius:0;
+}
+.div1{
+    top: 0;
+    left: 100px;
+    background:rgb(0,82,156) ;
+}
+.div2{
+    top: 100px;
+    left: 0;
+    background:rgb(20,162,212);
+}
+.div3{
+    top: 100px;
+    left: 100px;
+    background: #e7e7e7;
+}
+.div3 img{
+    width: 70px;
+    height: 70px;
+}
+.icon{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.div4{
+    top: 100px;
+    left: 200px;
+    background: rgb(0,177,106) ;
+}
+.div5{
+    top: 200px;
+    left: 100px;
+    background: rgb(255,192,203);
+}
+    /*动画类*/
+    .con1{
+        animation:con1  4s linear .1s 1 normal;
+        -moz-animation:con1 4s linear .1s 1 normal;
+        -webkit-animation:con1 4s linear .1s 1 normal;
+        -o-animation:con14s linear .1s 1 normal;
+    }
+    .con2{
+        animation:con2 4s linear .1s 1 normal;
+        -moz-animation:con2 4s linear .1s 1 normal;
+        -webkit-animation:con2 4s linear .1s 1 normal;
+        -o-animation:con2 4s linear .1s 1 normal;
+    }
+
+
+/*con1动画*/
+@keyframes con1 {
+    0%   {background:rgb(255,255,255); transform:rotate(0deg);}
+    20%  {background:rgb(0,177,106);transform:rotate(72deg);}
+    40%  {background: rgb(255,192,203);transform:rotate(144deg);}
+    60%  {background: rgb(20,162,212);transform:rotate(216deg) }
+    80%  {background: rgb(0,82,156);transform:rotate(288deg);}
+    100% {background:rgb(255,255,255); transform:rotate(360deg);}
+}
+@-webkit-keyframes con1{
+    0%   {background:rgb(255,255,255); transform:rotate(0deg);}
+    20%  {background:rgb(0,177,106);transform:rotate(72deg);}
+    40%  {background: rgb(255,192,203);transform:rotate(144deg);}
+    60%  {background: rgb(20,162,212);transform:rotate(216deg) }
+    80%  {background: rgb(0,82,156);transform:rotate(288deg);}
+    100% {background:rgb(255,255,255); transform:rotate(360deg);}
+}
+@-moz-keyframes  con1{
+    0%   {background:rgb(255,255,255); transform:rotate(0deg);}
+    20%  {background:rgb(0,177,106);transform:rotate(72deg);}
+    40%  {background: rgb(255,192,203);transform:rotate(144deg);}
+    60%  {background: rgb(20,162,212);transform:rotate(216deg) }
+    80%  {background: rgb(0,82,156);transform:rotate(288deg);}
+    100% {background:rgb(255,255,255); transform:rotate(360deg);}
+}
+@-o-keyframes     con1{
+    0%   {background:rgb(255,255,255); transform:rotate(0deg);}
+    20%  {background:rgb(0,177,106);transform:rotate(72deg);}
+    40%  {background: rgb(255,192,203);transform:rotate(144deg);}
+    60%  {background: rgb(20,162,212);transform:rotate(216deg) }
+    80%  {background: rgb(0,82,156);transform:rotate(288deg);}
+    100% {background:rgb(255,255,255); transform:rotate(360deg);}
+}
+/*con2动画*/
+@keyframes con2{
+    0%{  border-radius:0;}
+    25%{  border-radius:50%;}
+    50%{  border-radius:100%;}
+    75%{  border-radius:50%;}
+    100%{  border-radius:0;}
+}
+@-webkit-keyframes con2{
+    0%{  border-radius:0;}
+    25%{  border-radius:50%;}
+    50%{  border-radius:100%;}
+    75%{  border-radius:50%;}
+    100%{  border-radius:0;}
+}
+@-moz-keyframes con2{
+    0%{  border-radius:0;}
+    25%{  border-radius:50%;}
+    50%{  border-radius:100%;}
+    75%{  border-radius:50%;}
+    100%{  border-radius:0;}
+}
+@-o-keyframes con2{
+    0%{  border-radius:0;}
+    25%{  border-radius:50%;}
+    50%{  border-radius:100%;}
+    75%{  border-radius:50%;}
+    100%{  border-radius:0;}
+}

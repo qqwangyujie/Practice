@@ -1,0 +1,288 @@
+
+
+
+    /*---------------------------导航-------------------------------*/
+    .container{
+        width: 100%;
+        min-width: 320px;
+    }
+    .nav{
+        width: 100%;
+        height: 50px;
+
+    }
+    .nav ul{
+        display: none;
+    }
+    /*---------------------天气------------------*/
+    .nav .weather{
+        float: left;
+        position: relative;
+        width: 60%;
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+        padding: 0 9px;
+    }
+    .nav .weather-city::before,.nav .weather-city::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 7px;
+        border-style: solid;
+    }
+    .nav .weather-city::before{
+        right: -20px;
+        bottom: -6px;
+        border-color: #dbdbdb transparent transparent transparent;
+    }
+    .nav .weather-city::after{
+        right: -20px;
+        bottom: -4px;
+        border-color: #fff transparent transparent transparent;
+    }
+    .weather>div:first-child{
+        float: left;
+        text-align: left;
+        height: 100%;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .weather .icon-sun{
+        margin-top: 15px;
+        float: left;
+        width: 24px;
+        height: 24px;
+        background: url("../images/sun.png") no-repeat center;
+    }
+    .nav .weather .weather-city{
+        position: relative;
+        margin-top: 15px;
+        margin-left: 7px;
+        padding-left:7px;
+        float: left;
+        border-left: 1px solid #e7e7e7;
+        font-size: 11px;
+    }
+    .weather .weather-city p{
+        line-height: 13px;
+    }
+    /*---------------------用户------------------*/
+    .nav .nav-user{
+        float: left;
+        position: relative;
+        display: block;
+        width: 40%;
+    }
+    .nav .nav-user .user{
+        position:absolute;
+        background: url("../images/user.png") no-repeat center;
+        right: 20px;
+        top: 10px;
+        width: 24px;
+        height: 28px;
+    }
+    /*---------------------------logo-------------------------------*/
+    .logo{
+        margin-top: 0;
+        width: 100%;
+    }
+    .logo img{
+        width: 165px;
+        height: 75px;
+    }
+
+    .content{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .content .input{
+        margin: 0 auto;
+        display: inline-block;
+        width: 100%;
+        height: 34px;
+        background: #eea236;
+        border: 1px solid #8d9394;
+    }
+    .content .input input{
+        padding-left: 10px;
+        margin: 0;
+        width: 100%;
+        height: 34px;
+    }
+    .content .submit{
+        position: absolute;
+        display: inline-block;
+        width: 70px;
+        top: 0;
+        right: -1px;
+        color:#46484b;
+        font-weight: 700;
+        border: 1px solid #8d9394;
+        background: #eee;
+        background:  -webkit-linear-gradient(top,#f9f9f9,#e7e9eb)
+    }
+
+    /*---------------------------新闻、视频、生活-------------------------------*/
+    .content ul{
+        display: block;
+        clear: left;
+        padding-top: 15px;
+        width: 100%;
+    }
+    .content ul li{
+        text-align: center;
+        box-sizing: border-box;
+        float: left;
+        line-height: 25px;
+        height: 45px;
+        width: 16%;
+        padding-left:4px ;
+    }
+    .content ul li img{
+        width: 16px;
+        height: 16px;
+        display: block;
+    }
+    .content ul li a{
+        text-decoration: none;
+        font-size: 12px;
+    }
+    /*---------------------------内容-------------------------------*/
+    .empty{
+        margin: 20px auto;
+        width: 100%;
+    }
+    /*---------------------------常用网址-------------------------------*/
+    .empty .box{
+        display: block;
+        font-size: 15px;
+        width: 90%;
+        border: 1px solid #eee ;
+        margin: 20px auto;
+    }
+    .box .box-head{
+        position: relative;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 40px;
+    }
+    .box .box-head i{
+        top: 5px;
+        left: 20px;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+    }
+    .box .box-head i img{
+        width: 100%;
+        height: 100%;
+    }
+    .box .box-head p{
+        color: #aaa;
+        font-weight: 500;
+    }
+    .box .box-head a{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        border: 0;
+        width: 16px;
+        height: 16px;
+        background: url("../images/menu.png") no-repeat center;
+    }
+
+    .box .box-body{
+        width: 100%;
+    }
+
+    .box .box-body ul{
+        position: relative;
+        color: #262626;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        height: 100px;
+    }
+    .box .box-body ul li{
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 40px;
+        float: left;
+        width: 25%;
+        height: 40px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+    .box .box-body ul>li:last-child{
+        font-size: 35px;
+        font-weight: 700;
+        color: #B6B7BA;
+    }
+    .box .hot::after{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        border: 3px solid transparent;
+        background: #f74747;
+        border-radius: 50%;
+        top: 8px;
+    }
+
+    /*--------------------------实事新闻-------------------------------*/
+
+    .box .box-body .body-a{
+        position: relative;
+        color: #262626;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+        height: 150px;
+    }
+    .box a{
+        margin-top: 10px;
+        float: left;
+        height: 20px;
+        padding-left: 20px;
+        display: inline-block;
+        text-decoration: none;
+        width: 50%;
+        line-height: 20px; ;
+        box-sizing: border-box;
+        border-right: 1px solid#eee;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+
+    }
+
+    /*---------------------------foot-------------------------------*/
+
+    .foot{
+        left: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .foot p{
+        display: none;
+    }
+    .foot h5{
+        display: none;
+    }
+    .foot h4{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .foot h4 a{
+        text-align: center;
+        font-size: 12px;
+        color: #B6B7BA;
+    }

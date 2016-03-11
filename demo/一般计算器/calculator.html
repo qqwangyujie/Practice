@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link type="text/css" rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap-head">
+            <p>计算器</p>
+            <div class="box" id="box">
+               <p>0</p>
+            </div>
+        </div>
+        <div class="wrap-body">
+            <!--数字-->
+            <div class="num-box">
+                    <input type="button" value="1" class="number">
+                    <input type="button" value="2" class="number">
+                    <input type="button" value="3" class="number">
+                    <input type="button" value="4" class="number">
+                    <input type="button" value="5" class="number">
+                    <input type="button" value="6" class="number">
+                    <input type="button" value="7" class="number">
+                    <input type="button" value="8" class="number">
+                    <input type="button" value="9" class="number">
+                    <input type="button" value="0" class="number ls">
+                    <input type="button" value="." class="number" id="point" >
+            </div>
+            <!--符号-->
+            <div class="calculator-box">
+                    <input type="button" value="+" class="operator">
+                    <input type="button" value="-" class="operator">
+                    <input type="button" value="*" class="operator">
+                    <input type="button" value="/" class="operator">
+                    <input type="button" value="sin" class="operator">
+                    <input type="button" value="cos" class="operator">
+                    <input type="button" value="√" class="operator">
+                    <input type="button" value="%" class="operator">
+                    <div id="equal">=</div>
+                    <div id="zero">清屏</div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

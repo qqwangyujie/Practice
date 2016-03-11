@@ -1,0 +1,164 @@
+
+/*初始化*/
+*{
+    list-style: none;
+    margin: 0;padding: 0;
+    font-family: arial, '宋体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+    text-align: center;
+}
+/*表格属性*/
+table{
+    border-collapse: collapse;
+    border: 1px solid #f0f0f0;
+}
+tr{
+    width: 700px;
+    height: 30px;
+}
+td{
+    width: 100px;
+    height:20px;
+
+}
+/*整个容器*/
+.container{
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    height: 495px;
+    width: 750px;
+    margin:  0 auto;
+
+}
+/*标题css*/
+.caption{
+    font-weight: 700;
+    color: #ffffff;
+    box-sizing: border-box;
+    line-height: 70px;
+    height: 70px;
+    background: #1a4227;/*不支持渐变时的背景*/
+    background: -webkit-linear-gradient(top,  #567450,#1a4227);
+}
+.caption h2{
+    text-shadow:2px 2px 8px #350000;
+}
+/*星期css*/
+.week{
+    font-size: 18px;
+    font-weight: 900;
+    color: #969696;
+    background-color: #d9d9d9;
+    line-height: 30px;
+    height: 30px;
+}
+.week li{
+
+    width: 100px;
+    float:right;
+}
+/*左侧时间轴css*/
+.time{
+    padding-top: 15px;
+    background-color: #f7f7f7;
+    width: 50px;
+    height: 391px;
+    float: left;
+    box-sizing: border-box;
+}
+.time li{
+    box-sizing: border-box;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.time li span{
+    margin-left: 8px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #919191;
+}
+/*灰色覆盖层，覆盖表格，为了实现表格颜色隔行变色*/
+.floor{
+    background: #f7f7f7;
+    width: 100px;
+    height: 390px;
+    bottom: 5px;
+    position: absolute;
+    opacity: 0.5;
+}
+.F1{
+    left: 150px;
+}
+.F2{
+    left: 350px;
+}
+.F3{
+    left: 550px;
+}
+/*课表层，覆盖在最上层*/
+.course{
+    width: 700px;
+    height: 391px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+    color: #fbfbfb;
+    font-weight: 600;
+}
+/*课表的颜色层*/
+.greed{
+
+    line-height: 60px;
+    position: absolute;
+    width: 96px;
+    height: 60px;
+    background: #a0d049;
+    box-shadow:0 0 70px 5px #9eba66 inset;
+
+    border-radius: 10px;
+
+}
+.orange{
+    line-height: 80px;
+    position: absolute;
+    width: 96px;
+    height: 80px;
+    border-radius: 10px;
+    background: #ff9d4c;
+    box-shadow:0 0 70px 5px #e99a4b inset;
+
+}
+.red{
+    line-height: 20px;
+    position: absolute;
+    width: 96px;
+    height: 20px;
+    border-radius: 10px;
+    background: #fe7a78;
+    box-shadow:0 0 70px 5px #e48082 inset;
+
+}
+.blue{
+    line-height: 60px;
+    position: absolute;
+    width: 96px;
+    height: 60px;
+    border-radius: 10px;
+    background: #7583dc;
+    box-shadow:0 0 70px 5px #858cb6 inset;
+
+}
+.pink{
+    line-height: 90px;
+    position: absolute;
+    width: 96px;
+    height:90px;
+    border-radius: 10px;
+    background: #f284a9;
+    box-shadow:0 0 70px 5px #d680a3 inset;
+
+}
+

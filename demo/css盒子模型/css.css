@@ -1,0 +1,189 @@
+
+*{
+    margin: 0;padding: 0;
+    font-family:"Times New Roman", Times, Cambria, serif;
+}
+
+hr{
+    margin: 0 auto;
+    width: 95%;
+    border: 1px solid #dbdbdb;
+}
+h6{
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 8px;
+    color:#9f9d9a ;
+}
+h4{
+    font-size: 12px;
+    color: #333333;
+}
+h3{
+    font-size: 24px;
+    color: #ba1820;
+}
+/*容器*/
+.container{
+    background: url("images/bg.png") repeat;
+    margin: 0 auto;
+
+    width: 1200px;
+
+    box-shadow: 1px 1px 1px #acacac;
+}
+/*标题*/
+.title{
+    text-align: center;
+    width: 100%;
+    height: 70px;
+
+}
+/*内容*/
+.content{
+    display: -webkit-flex;
+
+    display: flex
+width: 100%;
+    height: 350px;
+
+    box-sizing: border-box;
+    padding: 30px;
+}
+/*盒子*/
+.box{
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 1px #acacac;
+    border-radius: 3px;
+    width: 135px;
+    background: #f8f5f4;
+    -webkit-flex:1 1 0;
+    flex:1 1 0;
+    margin-left: 25px;
+    text-align: center;
+}
+.img{
+    margin: 0 auto;
+    width: 200px;
+    display: block;
+    background: url("images/pig.png") no-repeat 0 -50px;
+    background-size: cover;
+    height: 100px;
+}
+.box p{
+
+    display: block;
+    text-align: left;
+}
+.box .big{
+    margin-top: -18px;
+    width: 65px;
+    height: 80px;
+    font-size: 90px;
+    color: #ba1820;
+    float: left;
+    display: inline-block;
+}
+.box .red{
+    color: #ba1820;
+}
+
+/*多列*/
+
+.columns{
+    padding: 30px;
+    width: 95%;
+    -moz-columns:200px;
+    -webkit-columns:200px;
+    columns:200px;
+}
+.columns p{
+    background: #eeeeee;
+}
+/*order*/
+.order{
+    width: 95%;
+    padding: 30px;
+    display:-webkit-flex;
+    display:flex;
+}
+.order span{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #80b4f0;
+}
+.order span:nth-child(3){
+    -webkit-order:-1;
+    order:-1;
+}
+/*盒子对比*/
+.contrast{
+    width: 95%;
+    padding: 30px;
+}
+.puT,.guaiY{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    background: #b3f0e5;
+    border: 5px  solid #006687;
+    width: 150px;
+    height: 150px;
+}
+.guaiY{
+   box-sizing: border-box;
+}
+
+/*flex*/
+
+.flex{
+    width: 95%;
+    padding: 30px;
+}
+.flex hr{
+    width: 100%;
+}
+.flex p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.flex span{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #80b4f0;
+
+}
+.flexRow,.flexRowRevers,.flexColumn,.flexRowColumnRevers{
+    display:-webkit-flex;
+    display:flex;
+
+
+}
+
+.flexRow{
+    -webkit-flex-direction:row;
+    flex-direction:row;
+}
+.flexRowRevers{
+
+    -webkit-flex-direction:row-reverse;
+    flex-direction:row-reverse;
+}
+.flexColumn{
+    height: 300px;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+}
+
+ .flexRowColumnRevers{
+     height: 300px;
+     -webkit-flex-direction:column-reverse;
+     flex-direction:column-reverse;
+ }

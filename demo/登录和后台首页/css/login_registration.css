@@ -1,0 +1,222 @@
+/*-------------------------------------------------暴力初始化---------------------------------------*/
+*{
+    text-align: center;
+    list-style: none;
+    margin: 0;padding: 0;
+    font-family: arial, '宋体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', \5b8b\4f53, Tahoma, Arial, Helvetica, STHeiti;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #e0ebe8;
+    min-height: 700px;
+    min-width: 800px;
+}
+.container{
+
+    position: relative;
+    height: 100%;
+    width: 800px;
+    margin: 0  auto 0 auto;
+
+}
+/*-------------------------------------------------第一页------------------------------------------*/
+.page1{
+    position: absolute;
+    box-sizing: border-box;
+    background: transparent;
+    height: 400px;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    top:50%;
+    margin-top: -300px;
+}
+/*--------------------------------------------------logo------------------------------------------*/
+.logo{
+    padding-top:20px ;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+}
+.circle{
+    position: relative;
+    margin: 0 auto;
+    background:  #eee ;
+    border: 2px solid #e7e7e7;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.halo{
+    z-index: -1;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:-25px;
+    left:-25px;
+    background: -webkit-radial-gradient(rgba(255,223,67,1), rgba(255,223,67,0) 70%);
+    border-radius: 100%;
+}
+/*---------------------------------------------------表单容器--------------------------------------*/
+.content{
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+}
+/*---------------------------------------------------表单内容--------------------------------------*/
+form{
+    color: #006000;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+}
+form input{
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.2);
+    color: #45b29a;
+    transition: width 0.5s,background-color 0.5s,transform 0.5s;
+    -moz-transition: width 0.5s,transform 0.5s,background-color 0.5s;
+    -webkit-transition: width 0.5s,transform 0.5s,background-color 0.5s;
+    -o-transition: width 0.5s,transform 0.5s,background-color 0.5s;
+}
+.ihover{
+    width: 250px;
+    height: 40px;
+}
+form input:hover{
+    background-color: rgb(250, 255, 189);
+}
+form button{
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    width: 200px;
+    height: 40px;
+    background: #eee;
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #45b29a;
+    transition: color .5s , background-color .5s ,border-color .5s;
+    -webkit-transition: color .5s , background-color .5s ,border-color .5s;
+    -moz-transition: color .5s , background-color .5s ,border-color .5s;
+    -o-transition: color .5s , background-color .5s ,border-color .5s;
+}
+form  button:hover{
+    background:#45b29a;
+    color: #ffffff;
+    cursor: pointer;
+}
+/*-----------------------------------------------------第二页--小山层---------------------------------------------*/
+.page2{
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+
+}
+.land{
+
+    margin: 0 auto;
+    height:300px;
+    width: 700px;
+    background: url("../images/land.svg") no-repeat center ;
+    background-size: contain;
+}
+/*----------------------------------------------------第三页--云层------------------------------------------*/
+.page3{
+    z-index: -1;
+    position: absolute;
+    top:0;
+    width: 800px;
+    height:400px;
+    overflow: hidden;
+
+}
+.cloud{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    background:url("../images/cloud.svg") no-repeat center ;
+    opacity: 1;
+}
+.ps1{
+    left: -200px;
+    bottom: 150px;
+
+}
+.ps2{
+    top: 50px;
+    right: -300px;
+}
+
+
+/*-------------------------------------------------------云动画----------------------------------------------*/
+
+
+.ps1{
+    animation: first 50s linear .1s infinite ;
+}
+.ps2{
+    animation: second 50s linear .1s infinite ;
+}
+    /*-----谷歌、苹果----*/
+@-webkit-keyframes first {
+    0%{ left:-200px;  bottom: 150px; opacity: 1;}
+    50%{ left: 800px;  bottom: 150px;opacity: 1;}
+    51%{ left: 805px;  bottom: 100px;opacity: 1;}
+    99%{ left: -199px;  bottom: 100px;opacity: 1;}
+    100%{ left: -200px;  bottom: 150px;;opacity: 1;}
+}
+@-webkit-keyframes second {
+    0%{ top: 50px; right: -100px;opacity: 1;}
+    50%{ top: 50px; right: 800px;opacity: 1;}
+    51%{ top: 80px; right:805px;opacity: 1;}
+    99%{ top: 80px; right: -199px;opacity: 1;}
+    100%{ top: 50px; right: -200px;opacity: 1;}
+}
+
+/*-----火狐----*/
+@-moz-keyframes first {
+    0%{ left:-200px;  bottom: 150px; opacity: 1;}
+    50%{ left: 800px;  bottom: 150px;opacity: 1;}
+    51%{ left: 805px;  bottom: 100px;opacity: 1;}
+    99%{ left: -199px;  bottom: 100px;opacity: 1;}
+    100%{ left: -200px;  bottom: 150px;;opacity: 1;}
+}
+@-moz-keyframes second {
+    0%{ top: 50px; right: -100px;opacity: 1;}
+    50%{ top: 50px; right: 800px;opacity: 1;}
+    51%{ top: 80px; right:805px;opacity: 1;}
+    99%{ top: 80px; right: -199px;opacity: 1;}
+    100%{ top: 50px; right: -200px;opacity: 1;}
+}
+
+/*-----ie----*/
+
+@-ms-keyframes first {
+    0%{ left:-200px;  bottom: 150px; opacity: 1;}
+    50%{ left: 800px;  bottom: 150px;opacity: 1;}
+    51%{ left: 805px;  bottom: 100px;opacity: 1;}
+    99%{ left: -199px;  bottom: 100px;opacity: 1;}
+    100%{ left: -200px;  bottom: 150px;;opacity: 1;}
+}
+@-ms-keyframes second {
+    0%{ top: 50px; right: -100px;opacity: 1;}
+    50%{ top: 50px; right: 800px;opacity: 1;}
+    51%{ top: 80px; right:805px;opacity: 1;}
+    99%{ top: 80px; right: -199px;opacity: 1;}
+    100%{ top: 50px; right: -200px;opacity: 1;}
+}

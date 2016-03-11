@@ -1,0 +1,73 @@
+﻿/*初始化*/
+html,body, .warp,button,input,textarea{
+    margin: 0;padding: 0;
+    font-family: "微软雅黑" , helvetica arial;
+    font-size: 18px
+}
+input,button,select,textarea{
+    outline:none
+border: 0;
+}
+/*容器*/
+.warp{
+    margin: 0 auto;
+    width: 700px;
+
+    border:1px solid #e7e7e7;
+}
+/*容器头*/
+.warp .warp-head{
+    margin: 10px auto;
+    width: 95%;
+    height: 40px;
+}
+.warp .warp-head input{
+    border: 0;
+    float: left;
+    padding-left: 20px;
+    width: 500px;
+    height: 40px;
+    border-bottom:1px solid #e7e7e7;
+    font-size: 18px;
+    color: #7bda95;
+}
+.warp .warp-head button{
+    outline:none
+cursor: pointer;
+    float: left;
+    border: 0;
+    width: 100px;
+    margin-left: 39px;
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #e7e7e7;
+}
+/*容器身体*/
+.warp-body{
+    margin: 0 auto;
+    width: 95%;
+    height: 700px;
+}
+.warp-body textarea{
+    width: 619px;
+    height: 400px;
+    padding:0 20px;
+    border: 0;
+    border-bottom: 1px solid #e7e7e7;
+    resize: none;
+    line-height: 1.5em;
+}
+#box1{
+    width: 600px;
+    height: 30px;
+}
+#box2{
+    width: 600px;
+}
+#box2 p{
+    float: left;
+    margin: 5px 5px;
+    display: inline-block;
+    font-size: 15px;
+    color: #006687;
+}
